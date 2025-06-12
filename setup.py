@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyconvex',
-    version='0.3',
+    version='0.1',
     description="A package for convex analysis.",
     author="Benedikt Magnússon",
     author_email="bsm@hi.is",
