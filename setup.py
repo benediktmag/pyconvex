@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='pyconvex',
     version='0.1',
-    description="A package for convex geometry.",
+    description="A Python package for convex geometry.",
     author="Benedikt Magnússon",
     author_email="bsm@hi.is",
     license="MIT",
