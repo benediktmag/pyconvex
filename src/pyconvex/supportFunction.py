@@ -25,7 +25,11 @@ def supportFunction(point, points):
     ----------
     supportFunction(np.array([1, -3]), np.array([[0, 0], [2, 0], [0, 1]]))
     """
-    if (np.array(points).size == 0):
+    point = np.array(point)
+    points = np.array(point)
+    if (point.size == 0):
+        raise ValueError("Need to have a point.")
+    if (points.size == 0):
         raise ValueError("The array points cannot be empty.")
     maxDotProduct =  -math.inf
     for p in points:
@@ -58,7 +62,11 @@ def supportFunctionList(pointsList, points):
     supportFunctionList(np.array([[1, -3], [1, 2], [1, 3], [0, 6], [-5, 2], 
     [-3, -5], [0, -4], [1, -1]]), np.array([[0, 0], [2, 0], [0, 1]]))
     """
-    if (np.array(points).size == 0):
+    pointsList = np.array(pointsList)
+    points = np.array(points)
+    if (pointsList.size == 0):
+        raise ValueError("Need to have a list of points.")
+    if (points.size == 0):
         raise ValueError("The array points cannot be empty.")
     supportFunctionList = []
     for point in pointsList:
